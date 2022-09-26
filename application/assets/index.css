@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Source Sans Pro !important;
+}
+
+nav.navbar.navbar-expand-lg {
+    background: #041C55 !important;
+}
+
+.navbar-light .navbar-brand {
+    color: #FA921C !important;
+}
+
+
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end !important;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+
+.hero-section-rmh {
+    height: 92vh !important;
+    /* background: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: #FA921C;
+    animation-name: change_bg;
+	animation-duration: 15s;
+	animation-iteration-count:infinite; 
+    transition: 0.5s !important;
+    background-size: cover I !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(0 0 0 / 80%), rgb(0 0 0 / 80%)), url(../img/hotel5.webp);
+}
+
+.title-cust {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.hero-section-rmh h6 {
+    font-size: 2rem;
+}
+
+.hero-section-rmh input {
+    background: #fff;
+    padding: 0.5rem 6rem;
+    text-align: center;
+    border: 0;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+
+.about-section-rmh {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    background: transparent;
+    height: 50vh;
+    align-items: center;
+    padding: 2rem !important;
+}
+
+.about-section-rmh {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+    background: transparent;
+    align-items: center;
+    padding: 2rem !important;
+    height: fit-content;
+}
+
+
+/* @keyframes change_bg {
+    0%   {background: linear-gradient(45deg, rgb(0 0 0 / 80%), rgb(0 0 0 / 80%)), url(./img/hotel1.jpeg);}
+    25%  {background: linear-gradient(45deg, rgb(0 0 0 / 80%), rgb(0 0 0 / 80%)), url(./img/hotel2.jpeg);}
+    50%  {background: linear-gradient(45deg, rgb(0 0 0 / 80%), rgb(0 0 0 / 80%)), url(./img/hotel3.jpeg);}
+    75%  {background: linear-gradient(45deg, rgb(0 0 0 / 80%), rgb(0 0 0 / 80%)), url(./img/hotel4.jpeg);}
+    100% {background: linear-gradient(45deg, rgb(0 0 0 / 80%), rgb(0 0 0 / 80%)), url(./img/hotel5.webp);}
+  } */
+
+  .testimonial {
+    border-right: 4px solid #2a3d7d;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px 30px 130px;
+    margin: 0 15px 30px 15px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+  .testimonial:before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: -17px;
+    border-top: 25px solid #FA921C;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(45deg);
+  }
+  .testimonial:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -17px;
+    border-top: 25px solid #FA921C;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(135deg);
+  }
+  .testimonial .pic {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+  }
+  .testimonial .pic img {
+    width: 100%;
+    height: auto;
+  }
+  .testimonial .description {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #6f6f6f;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  .testimonial .title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FA921C;
+    margin: 0;
+  }
+  .testimonial .post {
+    display: inline-block;
+    font-size: 17px;
+    color: #FA921C;
+    font-style: italic;
+  }
+  .owl-theme .owl-controls .owl-page span {
+    border: 2px solid #2a3d7d;
+    background: #fff !important;
+    border-radius: 0 !important;
+    opacity: 1;
+  }
+  .owl-theme .owl-controls .owl-page.active span,
+  .owl-theme .owl-controls .owl-page:hover span {
+    background: #FA921C !important;
+    border-color: #FA921C;
+  }
+
+  .testimonial-rmh {
+    padding: 2rem;
+    background: #041c55;
+}
+
+
+.contact-rmh{
+    padding: 2rem !important;
+}
+
+
+  @media only screen and (max-width: 767px) {
+    .testimonial {
+      padding: 20px;
+      text-align: center;
+    }
+    .testimonial .pic {
+      display: block;
+      position: static;
+      margin: 0 auto 15px;
+    }
+  }
+  
+
+
+
+@media screen and (max-width:575px) {
+    .hero-section-rmh h4 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+    .hero-section-rmh h6 {
+        font-size: 1.8rem;
+    }
+    .hero-section-rmh input {
+        padding: 0.2rem 1rem;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+.container-fluid.about-section-rmh {
+    grid-template-columns: 100%;
+    grid-auto-flow: row;
+}
+}
+
+
+  
+  .contact-form-wrapper {
+    padding: 100px 0;
+    background-color: #F6F6F6;
+
+  }
+  
+  .contact-form {
+    padding: 30px 40px;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+    max-width: 400px;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form .form-input,
+  .form-text-area {
+    background-color: #f0f4f5;
+    height: 50px;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-text-area {
+    background-color: #f0f4f5;
+    height: auto;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-control::placeholder {
+    color: #000000;
+    font-weight: 500;
+    opacity: 1;
+  }
+  
+  .contact-form .form-control:-ms-input-placeholder {
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control::-ms-input-placeholder {
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control:focus {
+    border-color: #041C55;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #041C55;
+  }
+  
+  .contact-form .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .contact-form .description {
+    color: #aeb4b9;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper {
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper input {
+    border: none;
+    border-radius: 4px;
+    background-color: #041C55;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  
+  .contact-form .submit-button-wrapper input:hover {
+    background-color: #041C55;
+  }
+  
+
+  .page-title {
+    background: #F6F6F6;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+
+
+
+section.main_section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-container{
+  background-color: white;
+  width: 30vw;
+  height: 70vh;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; 
+   padding: 3rem;
+} 
+
+.semi_div{
+       height: 450px;
+       width: 900px;
+       display: flex;
+       /*border: 2px solid black;*/
+       border-radius: 20px;
+       background: url('bg.svg');
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    .form_sec{
+       width: 50%;
+       /*border: 2px solid black;*/
+       display: flex;
+       border-radius: 0px 20px 20px 0px;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 3rem;
+  color: #030047;
+    }
+    .illust img{
+       width: 80%;
+    }
+    .log_form{
+       background: #030047;
+       color: white;
+       justify-content: start;
+        padding-top: 4rem;
+
+    }
+    .log_form form{
+       display: flex;
+       flex-direction: column;
+    }
+    .log_form form input[type="email"],.log_form form input[type="text"], .log_form form input[type="password"]{
+       padding: 2px;
+       outline: none;
+       border: none;
+       border-bottom: 2px solid white;
+       background: transparent;
+       color: white;
+       width: 15vw;
+       margin-top: 1rem;
+       font-size: 15px;
+    }
+    .log_form form input[type="submit"]{
+       background: #FF3E6C;
+       color: white;
+       border: none;
+       outline: none;
+       cursor: pointer;
+       padding: 5px 10px;
+       font-size: 16px;
+       border-radius: 8px;
+       font-weight: 700;
+       margin-top: 1rem;
+           width: 8rem;
+    }
+    .Logo_name{
+       font-size: 35px;
+       font-weight: 700;
+    }
+    .log_form h2{
+       margin: 0;
+    }
+    input[type="email"]::placeholder, input[type="text"]::placeholder, input[type="password"]::placeholder {
+  color: #000000;
+}
+    @media screen and (max-width: 480px) {
+.illust{
+ display: none;
+}
+.log_form{
+ width: 100%;
+ border-radius: 0;
+}
+.log_form form input[type="email"], .log_form form input[type="email"], .log_form form input[type="password"] {
+ width: 40vw;
+}
+}
+
